@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* design the canvas to take up the entire screen*/
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#title1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;  /* Adjust this based on the desired size of your image */
+    height: auto;
+    border-top: 2px solid transparent; /* Making border transparent for the image */
+}
+
+/* design for second word*/
+
+#title1::before {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
